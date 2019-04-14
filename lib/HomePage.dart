@@ -41,7 +41,6 @@ class _HomeState extends State<Home> {
             ),
           ),//second container
           new SizedBox(height: 10.0,),
-
           new Container(
             margin: EdgeInsets.all(10.0),
             child: new Column(
