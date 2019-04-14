@@ -68,10 +68,18 @@ class _HomeState extends State<Home> {
           
           new Container(
             margin: EdgeInsets.all(10.0),
+            height: 200.0,
             child: new ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
-
+                lastData("asset/ff.jpg", "Flutter"),
+                new SizedBox(width: 10.0,),
+                lastData("asset/pr.jpg", "ios"),
+                new SizedBox(width: 10.0,),
+                lastData("asset/dd.jpg", "Android"),
+                new SizedBox(width: 10.0,),
+                lastData("asset/dd.jpg", "Firebase"),
+                new SizedBox(width: 10.0,),
               ],
             ),
           ),//fourth container here
@@ -129,8 +137,34 @@ class _HomeState extends State<Home> {
 
   }
 
-  Widget lastData(){
-    
+  Widget lastData(String image,String title){
+    return Container(
+      child: new Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+
+          new Container(
+            child: new ClipRRect(
+              borderRadius: BorderRadius.circular(8.0),
+              child: new Image(
+                  image: new AssetImage(image),
+                height: 120.0,
+                width: 120.0,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          new SizedBox(height: 8.0,),
+
+          new Container(
+            child: new Text(title,
+            style: TextStyle(fontSize: 17.0,color: Colors.white),
+            ),
+          )
+
+        ],
+      ),
+    );
   }
 
 }
