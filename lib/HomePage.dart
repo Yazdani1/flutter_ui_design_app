@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                 new SizedBox(width: 10.0,),
                 lastData("asset/pr.jpg", "ios"),
                 new SizedBox(width: 10.0,),
-                lastData("asset/dd.jpg", "Android"),
+                lastData("asset/ee.jpg", "Android"),
                 new SizedBox(width: 10.0,),
                 lastData("asset/dd.jpg", "Firebase"),
                 new SizedBox(width: 10.0,),
@@ -157,8 +157,28 @@ class _HomeState extends State<Home> {
           new SizedBox(height: 8.0,),
 
           new Container(
-            child: new Text(title,
-            style: TextStyle(fontSize: 17.0,color: Colors.white),
+            child: new Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+
+                new Container(
+                  child: new Text(title,
+                    style: TextStyle(fontSize: 17.0,color: Colors.white),
+                  ),
+                ),
+                new SizedBox(width: 20.0,),
+                new Container(
+                  height: 10.0,
+                  width: 10.0,
+                  decoration: new BoxDecoration(
+                    borderRadius: BorderRadius.circular(90.0),
+                    color: Colors.green
+                  ),
+
+                )
+
+
+              ],
             ),
           )
 
