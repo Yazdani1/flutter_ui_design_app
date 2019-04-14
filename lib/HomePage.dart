@@ -31,7 +31,6 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),//end first container....
-          
           new Container(
             margin: EdgeInsets.all(10.0),
             child: new Text("World Best Product",
