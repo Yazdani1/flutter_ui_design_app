@@ -41,7 +41,6 @@ class _HomeState extends State<Home> {
             ),
             ),
           ),//second container
-
           new SizedBox(height: 10.0,),
 
           new Container(
@@ -58,7 +57,6 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),//third container
-
           new Container(
             margin: EdgeInsets.all(10.0),
             child: new Text("Most Popular Product",
@@ -136,13 +134,11 @@ class _HomeState extends State<Home> {
     );
 
   }
-
   Widget lastData(String image,String title){
     return Container(
       child: new Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-
           new Container(
             child: new ClipRRect(
               borderRadius: BorderRadius.circular(8.0),
@@ -176,7 +172,7 @@ class _HomeState extends State<Home> {
                   ),
 
                 )
-                
+
               ],
             ),
           )
